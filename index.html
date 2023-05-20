@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imersão em Barbearia Clássica</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-RE9k6Cer6H6ixYJYXM8YUqazmF8RFShKjqol5wo7K54awRue/g7STZfX2v26xS7hA/Cn9AKPq7wQz2qM7Jznmw==" crossorigin="anonymous" />
+
+  <style>
+    body {
+      background-color: black;
+    }
+    .jumbotron {
+      background-image: url('https://uploaddeimagens.com.br/images/004/474/709/original/fundo-page.png?1684547353');
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0.9) !important;
+      /*color: #000;*/
+    }
+    
+    .navbar {
+      background-color: #000;
+    }
+    
+    .navbar-brand {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    .nav-link {
+      color: #000;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    
+    section {
+      padding: 80px 0;
+      color: #fff;
+    }
+    .section-text{
+      color: #000 !important;
+    }
+    
+    h1, h2, h5 {
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    .btn-success {
+      background-color: #fff;
+      border-color: #fff;
+      color: #000;
+    }
+ 
+    .two-columns {
+      columns: 2;
+    }
+
+    .card {
+      border: none;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-title {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    
+    .testimonial-video {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+    
+    .testimonial-video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    footer {
+      background-color: #fff;
+      color: #000;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 70px;
+      height: 70px;
+      background-color: green;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 24px;
+      line-height: 60px;
+      z-index: 999;
+      transition: transform 0.2s;
+      animation: shake 2.5s;
+    }
+
+    .whatsapp-float img {
+      width: 45px;
+      height: 45px;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+    @keyframes shake {
+      0% { transform: translate(0, 0); }
+      10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% { transform: translate(-2px, -2px); }
+      15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% { transform: translate(2px, 2px); }
+      100% { transform: translate(0, 0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Barbearia</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#schedule">Programação</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#instructor">Professor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Depoimentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="display-4">Imersão em Barbearia Clássica</h1>
+        <p class="lead">Aprenda as técnicas tradicionais de barbearia em um evento exclusivo</p>
+        <div class="d-flex justify-content-center">
+          <a href="ingressos.html" class="btn btn-success btn-lg mr-3">Garanta seu Ingresso</a>
+          <a href="detalhes.html" class="btn btn-outline-light btn-lg">Mais Detalhes</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2>Sobre o Evento</h2>
+        <p class="text-center">O SHAVES n’ CUTS é uma imersão de <b>3 DIAS</b> onde você Barbeiro ou Barbeira aprende sobre: 
+          <ul class="two-columns">
+            <li>Atendimento</li>
+            <li>Fidelização</li>
+            <li>Captação de clientes</li>
+            <li>Técnicas de Corte</li>
+            <li>Barbear Tradicional</li>
+          </ul>
+        </p>
+      </div>
+    </section>
+
+    <section id="schedule" class="py-5">
+      <div class="container section-text">
+        <h2 class="text-center">Programação</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title section-text">Dia 1</h5>
+                <p class="card-text">
+                  08:00 café da manhã 
+                  08:30 abertura e apresentação 
+                  09:00 conteúdo sobre atendimento e fidelização 
+                  
+                  • público alvo 
+                  • posicionamento 
+                  • Preparação do ambiente 
+                  • postura 
+                  • processo de atendimento padrão 
+                  
+                  11:00 conteúdo sobre captação de clientes 
+                  - 10 estratégias de captação para aumentar seu faturamento
+                  
+                  
+                  13:00 almoço 
+                  14:00 retorno do almoço 
+                  14:30 espaço para tirar dúvidas
+                  
+                  16:00 encerramento do 1• dia
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title section-text">Dia 2</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body ">
+                <h5 class="card-title section-text">Dia 3</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="instructor" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Professor - Almir Laurindo</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://uploaddeimagens.com.br/images/004/471/573/original/almir-laurindo-1.jpg?1684379547" class="d-block w-100" alt="Foto 1">
+            </div>
+            <div class="carousel-item">
+              <img src="https://uploaddeimagens.com.br/images/004/471/574/original/almir-laurindo-2.jpg?1684379571" class="d-block w-100" alt="Foto 2">
+            </div>
+            <div class="carousel-item">
+              <img src="https://uploaddeimagens.com.br/images/004/471/575/original/almir-laurindo-3.jpg?1684379592" class="d-block w-100" alt="Foto 3">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+        <div class="text-center mt-4">
+          <h5>Breve Biografia</h5>
+          <p>Barbeiro à 9 anos, tive a honra de certificar mais de 5 mil alunos, tanto em cursos presenciais quanto online, consolidando-se como uma referência 
+            em Barbearia Clássica. Elaborou um catálogo de Cortes Clássicos próprio e já teve trabalhos publicados em 
+            Revistas como a Pixelshow onde estampou a capa. Todos os seus estudos foram baseados 
+            em Cortes Clássicos e hoje com uma metodologia própria ensina Barbeiros e Barbeiras de todo o Brasil 
+            a como aumentar seus faturamentos com técnicas de: Corte, Barba, Atendimento & Captação de Clientes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section-text py-5">
+      <div class="container">
+        <h2 class="text-center">Depoimentos</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Depoimento 1</h5>
+                <div class="testimonial-video">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <p class="card-text">
+                asdadadddddddddddddddddddd 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Depoimento 2</h5>
+                <div class="testimonial-video">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Depoimento 3</h5>
+                <div class="testimonial-video">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Adquira seu Ingresso</h2>
+        <p class="text-center">Garanta sua participação nessa imersão em barbearia clássica</p>
+        <div class="text-center">
+          <a href="ingressos.html" class="btn btn-success btn-lg">Comprar Ingresso</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-3">
+    <div class="container text-center">
+      <p>&copy; 2023 Barbearia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://api.whatsapp.com/send?phone=5585989719347" class="whatsapp-float" target="_blank">
+    <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3254551/whatsapp-icon-md.png" alt="WhatsApp">
+  </a>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
